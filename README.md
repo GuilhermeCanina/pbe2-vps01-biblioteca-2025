@@ -35,3 +35,51 @@ Desenvolver as funcionalidades conforme requisitos
 - **Insomnia**
 
 ## Passo a Passo de como executar a API
+
+### 1. Instale as dependências
+
+### Clone o repositório
+
+```bash
+git clone https://github.com/GuilhermeCanina/pbe2-vps01-biblioteca-2025.git
+```
+
+### 2. Abra o XAMPP Control Panel e inicie o MySQL
+### 3. Abra com o repositorio com VsCode
+### 4. Crie o arquivo .env na pasta API e adicione a variáveis de ambiente
+```env
+DATABASE_URL="mysql://root@localhost:3306/biblioteca?schema=public&timezone=UTC"
+```
+
+### 5. Abra o terminal, navegue até a pasta API e execute os comandos
+
+#### Dentro da pasta API, execute os seguintes comandos:
+
+##### Instale as dependências do projeto:
+
+```bash
+npm install
+```
+
+#### Gere o cliente Prisma:
+
+```bash
+npx prisma generate
+#ou
+prisma generate
+```
+
+#### Execute as migrações para criar as tabelas no banco de dados:
+
+```bash
+npx prisma migrate dev --name init
+#ou
+prisma migrate dev --name init
+```
+
+#### Inicie o servidor
+Para iniciar o servidor da API, use o comando:
+```bash
+npm start
+```
+O servidor estará rodando em http://localhost:3001

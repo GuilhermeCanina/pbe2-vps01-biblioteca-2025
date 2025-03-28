@@ -32,6 +32,13 @@ const create = async (req, res) => {
         try {
             const aluno = await prisma.aluno.findUnique({
                 where: { ra },
+                include:{
+                    emprestimos:{
+                        include:{
+                            livro:true,
+                        },
+                    },
+                }
             });
             if (!aluno) {
                 return res.status(404).json({ error: 'Aluno não encontrado' });

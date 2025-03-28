@@ -83,3 +83,16 @@ Para iniciar o servidor da API, use o comando:
 npm start
 ```
 O servidor estará rodando em http://localhost:3001
+
+### 7. Teste os endpoints
+Abra o Insomnia ou qualquer outra ferramenta de teste de API e crie uma nova requisição para testar os seguintes endpoints:
+
+
+- **POST /tasks: Criar uma nova tarefa.**
+
+- **GET /tasks: Listar todas as tarefas.**
+
+- **DELETE /tasks/{id}: Deletar uma tarefa.**
+
+### 8. Parar o servidor
+Para parar o servidor, pressione Ctrl + C no terminal.

@@ -27,11 +27,11 @@ Desenvolver as funcionalidades conforme requisitos
 - [CT005] Altere pelo menos dois emprestimos preenchendo a **devolucao** com data 4 dias maior que a retirada para testar o cálculo da **multa**.
 
 ## Tecnologias
-*Node.js
-*Prisma
-*XAMPP
-*MySQL
-*VsCode
-*Insomnia
+- **Node.js**
+- **Prisma**
+- **XAMPP**
+- **MySQL**
+- **VSCode**
+- **Insomnia**
 
 ## Passo a Passo de como executar a API
